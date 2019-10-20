@@ -1,8 +1,5 @@
 .nav {
-	padding-left: 0;
-	flex-basis: 100%;
-	display: flex;
-	flex-direction: column;
+	@include nav-base;
 	&-link {
 		text-align: center;
 		border-radius: 5px;
@@ -10,9 +7,17 @@
 		display: block;
 		width: 100%;
 		transition: background-color .2s ease-in-out, color .2s ease-in-out;
+		@include media-query($breakpoint-lg) {
+			flex-basis: 100px;
+		}
 		&:hover {
 			color: $color_4;
 			background-color: $background_color_13;
 		}
+	}
+	@include media-query($breakpoint-lg) {
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
 	}
 }

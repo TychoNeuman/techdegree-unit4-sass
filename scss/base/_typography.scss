@@ -16,3 +16,14 @@ a {
 	color: $color_3;
 	font-weight: 700;
 }
+
+.headline {
+    &-primary {
+        color: $color_2;
+        margin-left: 10px;
+    }
+    &-secondary {
+        font-weight: 300;
+        color: $color_primary;
+    }
+}

@@ -1,0 +1,22 @@
+.centered {
+	@include media-query($breakpoint-lg) {
+		display: block;
+		margin: auto;
+	}
+}
+
+.container {
+	padding: 0 10px;
+	@include media-query($breakpoint-lg){
+		max-width: 1400px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@each $number, $color in $background-colors {
+    .theme.col-#{$number} {
+        background-color: $color;
+    }
+}

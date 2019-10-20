@@ -22,3 +22,10 @@
         margin-right: auto;
     }
 }
+
+@media (min-width: $breakpoint-lg) {
+	.logo {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
